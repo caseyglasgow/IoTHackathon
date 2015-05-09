@@ -27,9 +27,9 @@ var updateSpread = function(data) {
 var updateSensors = function() {
    var motionText, lightText;
    $.get(url + '/motion', function(data, status){
-      motionText = "Motion: "
       var aveMotion = updateSpread(parseInt(data));
-      $("#motion").html(motionText.concat((parseInt(data) ? "ON&nbsp;" : "OFF") + " &nbsp; &nbsp; &nbsp;AVG: " + aveMotion));
+      $("#motionValue").html((parseInt(data) ? "ON&nbsp;" : "OFF"));
+      $("#motionAvgValue").html(aveMotion);
    });
    $.get(url + '/light', function(data, status){
       lightText = "Light: ";
