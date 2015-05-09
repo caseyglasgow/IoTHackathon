@@ -8,7 +8,7 @@ var options = {
     }
 };
 
-var url = 'smartobjectservice.com:8080/domain2/endpoints/New-Team/3202/0/5600?sync=true'
+var url = 'http://smartobjectservice.com:8080/domain2/endpoints/New-Team/3420/0/6969?sync=true'
 
 $(document).ready(function(){
    console.log("Loaded");
