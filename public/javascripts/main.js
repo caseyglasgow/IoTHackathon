@@ -5,7 +5,10 @@ var urlReq = 'http://smartobjectservice.com:8080/domain2/endpoints/New-Team/3311
 var options = {
     type: 'GET',
     url: urlReq,
-    contentType: 'application/json',
+    contentType: 'text/plain',
+    scriptCharset: 'utf-8',
+
+    dataType: '*/*',
     username: 'demo',
     password: 'secret',
     success: gotData
@@ -16,10 +19,10 @@ var options = {
 
 $(document).ready(function(){
    console.log("Loaded");
-
+	console.log("test");
    $("button").click(function(){
 
-      $.ajax(options)
+     $.ajax(options)
    })
   
 });
