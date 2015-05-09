@@ -1,6 +1,7 @@
 extends layout
 
 block content
+<<<<<<< HEAD
   h1= "Multi-Purpose Home Monitor"
   p(class="redText"). 
     #{title}: 
@@ -8,5 +9,23 @@ block content
   p.
   #light
   p.
+=======
+  h1= "Home Light/Motion Monitor"
+
+    div(class="dataDisplay")
+      p(id="motionStatus" class="floatLeft").
+        Amount of Motion Detected:&nbsp 
+      p(id="motionValue" class="floatLeft greenText").
+        0
+    div(class="dataDisplay")
+      p(id="lightStatus" class="floatLeft").
+        Amount of Light Detected:&nbsp 
+      p(id="lightValue" class="floatLeft greenText").
+        0
+
+  br
+  br
+  br
+>>>>>>> origin/master
   button.
     Start/Stop Light & Motion Monitoring

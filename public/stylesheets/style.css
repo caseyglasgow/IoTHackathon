@@ -7,7 +7,16 @@ a {
   color: #00B7FF;
 }
 
-.redText {
+.greenText {
   font-weight: bold;
-  color: #FF0000;
+  color: #00AA00;
+}
+
+div.dataDisplay {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  clear: both;
+}
+
+p.floatLeft {
+    float: left;
 }
