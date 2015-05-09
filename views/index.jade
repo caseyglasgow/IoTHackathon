@@ -1,8 +1,17 @@
 extends layout
 
 block content
+  include graphics.html
+
   h1= "Multi-Purpose Home Monitor"
-  #motion
-  p.
-  #light
-  p.
+    div(class="dataDisplay")
+      p(id="motionStatus" class="floatLeft").
+        Motion:&nbsp 
+      p(id="motionValue" class="floatLeft greenText").
+        N/A
+
+    div(class="dataDisplay")
+      p(id="lightStatus" class="floatLeft").
+        Light:&nbsp 
+      p(id="lightValue" class="floatLeft greenText").
+        N/A
