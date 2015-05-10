@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
 
-<body>
     <script src="http://cloud.github.com/downloads/uxebu/bonsai/bonsai-0.4.0.min.js"></script>
 
     <div id="content">
@@ -45,7 +42,8 @@
 
         var c = stage.children();
         stage.length(frames);
-        var spread = 80;
+        //var spread = $("#motionValue").text() === "YES" ? 80 : 0;
+        var spread = 60;
         stage.on(0, function() {
           for (var i = 0, circle; (circle = c[i++]); ) {
 
@@ -72,9 +70,3 @@
         </script>
 
     </div>
-
-</body>
-
-
-
-</html>

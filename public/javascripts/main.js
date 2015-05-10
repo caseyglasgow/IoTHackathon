@@ -25,7 +25,6 @@ var updateSpread = function(data) {
 }
 
 var updateSensors = function() {
-   var motionText, lightText;
    $.get(url + '/motion', function(data, status){
       var aveMotion = updateSpread(parseInt(data));
       $("#motionValue").html((parseInt(data) ? "ON&nbsp;" : "OFF"));
